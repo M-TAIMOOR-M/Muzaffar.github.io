@@ -121,10 +121,10 @@ p {
 }
 
 h1 {
-  max-width: 11ch;
+  max-width: 16ch;
   margin: 0;
-  font-size: clamp(3.4rem, 10vw, 7.5rem);
-  line-height: 0.9;
+  font-size: clamp(2.4rem, 6.5vw, 5rem);
+  line-height: 0.95;
   letter-spacing: 0;
 }
 
@@ -179,6 +179,16 @@ h3 {
 .pcb-panel {
   display: grid;
   place-items: center;
+}
+
+.hero-image {
+  display: block;
+  width: min(100%, 520px);
+  aspect-ratio: 1;
+  object-fit: cover;
+  border: 10px solid #ffffff;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
 }
 
 .board {
@@ -310,7 +320,7 @@ h3 {
 
 .metrics {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   gap: 1px;
   margin-bottom: 64px;
   background: var(--line);
@@ -358,6 +368,17 @@ footer {
   gap: 18px;
 }
 
+.empty-state {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 28px;
+  background: #ffffff;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
 .project-card {
   display: grid;
   min-height: 260px;
@@ -375,42 +396,34 @@ footer {
 .project-visual {
   position: relative;
   min-height: 320px;
-  background: #153f33;
+  background: #f3f5f0;
 }
 
-.project-visual::before {
-  content: "";
-  position: absolute;
-  inset: 24px;
-  background:
-    radial-gradient(circle at 18% 22%, var(--copper) 0 8px, transparent 9px),
-    radial-gradient(circle at 74% 70%, var(--copper) 0 10px, transparent 11px),
-    linear-gradient(90deg, transparent 0 20%, var(--copper) 20% 22%, transparent 22% 100%),
-    linear-gradient(0deg, transparent 0 58%, var(--copper) 58% 60%, transparent 60% 100%);
-  border: 2px solid rgba(143, 197, 170, 0.55);
-  border-radius: 8px;
-}
-
-.visual-chip {
-  position: absolute;
-  top: 34%;
-  left: 30%;
-  width: 38%;
-  height: 30%;
-  background: #202833;
-  border-radius: 6px;
-}
-
-.visual-lines {
-  position: absolute;
-  inset: auto 12% 15% 12%;
-  height: 7px;
-  background: var(--copper);
-  border-radius: 999px;
+.project-visual img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  padding: 18px;
+  object-fit: contain;
+  object-position: center;
+  box-sizing: border-box;
 }
 
 .project-content {
   padding: clamp(22px, 4vw, 38px);
+}
+
+.project-content::after {
+  content: "Complete Manufacturing Package";
+  display: block;
+  margin-top: 22px;
+  padding-left: 10px;
+  border-left: 3px solid var(--green);
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
 }
 
 .spec-list {
@@ -437,6 +450,25 @@ dt {
 dd {
   margin: 4px 0 0;
   font-weight: 700;
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 24px;
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.text-link::after {
+  content: "->";
+}
+
+.project-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
 }
 
 .split {
@@ -516,7 +548,7 @@ footer {
   }
 
   h1 {
-    max-width: 9ch;
+    max-width: 16ch;
   }
 
   .metrics {
@@ -549,7 +581,7 @@ footer {
   }
 
   h1 {
-    font-size: clamp(3rem, 18vw, 4.4rem);
+    font-size: clamp(2.35rem, 12vw, 3.4rem);
   }
 
   .button {

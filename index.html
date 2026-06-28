@@ -29,8 +29,8 @@
           <p class="eyebrow">Hardware Design Engineer</p>
           <h1>Muhammad Taimoor Muzaffar</h1>
           <p class="hero-lede">
-            I design practical PCB hardware from schematic capture through layout, bring-up,
-            and prototype validation.
+            Electrical engineer with hands-on experience in end-to-end electronic hardware
+            development: circuit design, PCB layout, prototyping, testing, and validation.
           </p>
           <div class="hero-actions" aria-label="Portfolio actions">
             <a class="button primary" href="#projects">View PCB Work</a>
@@ -38,96 +38,883 @@
           </div>
         </div>
 
-        <div class="pcb-panel" aria-label="Decorative printed circuit board artwork">
-          <div class="board">
-            <span class="trace trace-a"></span>
-            <span class="trace trace-b"></span>
-            <span class="trace trace-c"></span>
-            <span class="chip chip-main"></span>
-            <span class="chip chip-small"></span>
-            <span class="port"></span>
-            <span class="via via-1"></span>
-            <span class="via via-2"></span>
-            <span class="via via-3"></span>
-            <span class="via via-4"></span>
-            <span class="label">PCB</span>
-          </div>
+        <div class="pcb-panel" aria-label="PCB portfolio hero image">
+          <img class="hero-image" src="assets/Front%20Page%20Image.png" alt="PCB hardware design portfolio visual">
         </div>
       </section>
 
       <section class="metrics" aria-label="Portfolio highlights">
         <article>
           <strong>PCB Design</strong>
-          <span>Schematic, layout, DFM, and bring-up workflow.</span>
-        </article>
-        <article>
-          <strong>Embedded Systems</strong>
-          <span>MCUs, sensor interfaces, power, and mixed-signal boards.</span>
-        </article>
-        <article>
-          <strong>Prototype Ready</strong>
-          <span>Organized documentation for fabrication and assembly.</span>
+          <span>Schematic capture, PCB layout, DFM, BOM creation, and manufacturing handoff.</span>
         </article>
       </section>
 
       <section id="projects" class="section">
         <div class="section-heading">
-          <p class="eyebrow">Selected Work</p>
           <h2>PCB Projects</h2>
-          <p>
-            Add your strongest boards here first: real photos, 3D renders, specs,
-            repository links, and the exact role you played.
-          </p>
         </div>
 
         <div class="project-grid">
           <article class="project-card featured">
             <div class="project-visual">
-              <span class="visual-chip"></span>
-              <span class="visual-lines"></span>
+              <img src="assets/Wearable%20Golf%20Watch%20PCB/For%20Front.jpg" alt="Wearable Golf Watch PCB">
             </div>
             <div class="project-content">
-              <p class="project-kicker">Case study slot</p>
-              <h3>Featured PCB Project</h3>
+              <p class="project-kicker">Low-power wearable electronics</p>
+              <h3>Wearable Golf Watch PCB</h3>
               <p>
-                Replace this with your best project: what the board does, why it matters,
-                and what engineering decisions made it work.
+                A compact, low-power wearable system built around the ESP32-S3 for
+                outdoor readability and efficient battery operation. The design
+                integrates USB programming and debugging, Li-ion charging and fuel
+                gauging, buck-boost power conversion, an SPI memory LCD with
+                front-light control, and a custom metal-dome keypad. The PCB was
+                completed with system documentation, BOM preparation, DFM review,
+                and assembly optimization for JLCPCB.
               </p>
               <dl class="spec-list">
                 <div>
-                  <dt>Main IC</dt>
-                  <dd>MCU / PMIC / RF IC</dd>
+                  <dt>Controller</dt>
+                  <dd>ESP32-S3</dd>
                 </div>
                 <div>
-                  <dt>Board</dt>
-                  <dd>Layer count, dimensions</dd>
+                  <dt>Display</dt>
+                  <dd>SPI memory LCD</dd>
                 </div>
                 <div>
-                  <dt>Status</dt>
-                  <dd>Prototype / shipped</dd>
+                  <dt>Power</dt>
+                  <dd>Li-ion and buck-boost</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Wearable%20Golf%20Watch%20PCB/Schematics.pdf" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Wearable%20Golf%20Watch%20PCB/PCB%20Top.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/Wearable%20Golf%20Watch%20PCB/PCB%20Bottom.jpg" target="_blank" rel="noopener">View PCB Bottom</a>
+                <a class="text-link" href="assets/Wearable%20Golf%20Watch%20PCB/Assembly%20Drawing.pdf" target="_blank" rel="noopener">Open Assembly Drawing</a>
+                <a class="text-link" href="assets/Wearable%20Golf%20Watch%20PCB/Exploded%20View.png" target="_blank" rel="noopener">View Exploded Assembly</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Rigid-Flex%20LED%20Controller/For%20front.jpg" alt="Rigid-Flex LED Controller PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">High-density LED control</p>
+              <h3>Rigid-Flex LED Controller</h3>
+              <p>
+                A high-density rigid-flex controller built around a 170 MHz
+                STM32G474RET6 and TLE9251VSJ CAN transceiver to drive a 36-unit
+                WS2815 LED matrix. Following prototype validation, the design was
+                refined for EMC/EMI compliance and product certification, with more
+                than 43 decoupling capacitors and molded tantalum bulk capacitors
+                providing stable power delivery in a compact, flexible form factor.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Controller</dt>
+                  <dd>STM32G474RET6</dd>
+                </div>
+                <div>
+                  <dt>Interface</dt>
+                  <dd>TLE9251VSJ CAN</dd>
+                </div>
+                <div>
+                  <dt>Output</dt>
+                  <dd>36x WS2815 LEDs</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/PCB%20Top.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/PCB%20Bottom.jpg" target="_blank" rel="noopener">View PCB Bottom</a>
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/PCB%203D%20Render.jpg" target="_blank" rel="noopener">View 3D Render</a>
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/PCB%203D%20Render%202.jpg" target="_blank" rel="noopener">View 3D Render 2</a>
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/Assembly%20Drawing.jpg" target="_blank" rel="noopener">View Assembly Drawing</a>
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/Assembled%20PCBs.jpg" target="_blank" rel="noopener">View Assembled PCBs</a>
+                <a class="text-link" href="assets/Rigid-Flex%20LED%20Controller/Testing.jpg" target="_blank" rel="noopener">View Testing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/For%20Front.jpg" alt="3-Axis Magnetic Field Sensing Cube">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Spatial magnetic sensing</p>
+              <h3>3-Axis Magnetic Field Sensing Cube</h3>
+              <p>
+                A rigid sensing cube assembled from six identical castellated PCBs,
+                each carrying an independent 3-axis magnetometer. All sensors share
+                one I2C bus and are selected through an I2C multiplexer, providing
+                reliable communication with minimal routing and interconnects.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Structure</dt>
+                  <dd>6 castellated PCBs</dd>
+                </div>
+                <div>
+                  <dt>Sensors</dt>
+                  <dd>6x 3-axis magnetometer</dd>
+                </div>
+                <div>
+                  <dt>Interface</dt>
+                  <dd>Multiplexed I2C bus</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/PCB%20Top%20View.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/PCB%20Bottom%20View.jpg" target="_blank" rel="noopener">View PCB Bottom</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/PCB%20Top%20(Render).jpg" target="_blank" rel="noopener">View PCB Render</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/Assembly%20Drawing.png" target="_blank" rel="noopener">View Assembly Drawing</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/PCBs%20Exploded.jpg" target="_blank" rel="noopener">View Exploded Cube</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/PCB%20Cube.jpg" target="_blank" rel="noopener">View Assembled PCB Cube</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/Assembled%20PCB.jpg" target="_blank" rel="noopener">View Assembled PCB</a>
+                <a class="text-link" href="assets/3-Axis%20Magnetic%20Field%20Sensing%20Cube/Testing.jpg" target="_blank" rel="noopener">View Testing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/40A%20Fuse%20Box%20PCB/For%20Front.jpg" alt="40A automotive fuse box PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Automotive power distribution</p>
+              <h3>40A Fuse Box PCB</h3>
+              <p>
+                A 40A automotive fuse box PCB designed as a reliable, service-friendly
+                replacement for an aging distribution unit in a vintage car. The
+                drop-in design preserves the original mounting and connector alignment,
+                uses robust copper for high-current paths, and provides clearly labeled
+                circuits for lighting, accessories, safety systems, and spares.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Current</dt>
+                  <dd>40A</dd>
+                </div>
+                <div>
+                  <dt>Application</dt>
+                  <dd>Automotive distribution</dd>
+                </div>
+                <div>
+                  <dt>Fit</dt>
+                  <dd>Drop-in replacement</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/40A%20Fuse%20Box%20PCB/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/40A%20Fuse%20Box%20PCB/PCB%20Top.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/40A%20Fuse%20Box%20PCB/PCB%20Bottom.jpg" target="_blank" rel="noopener">View PCB Bottom</a>
+                <a class="text-link" href="assets/40A%20Fuse%20Box%20PCB/Assembly%20Drawing.jpg" target="_blank" rel="noopener">View Assembly Drawing</a>
+                <a class="text-link" href="assets/40A%20Fuse%20Box%20PCB/Assembled%20PCB.jpg" target="_blank" rel="noopener">View Assembled PCB</a>
+                <a class="text-link" href="assets/40A%20Fuse%20Box%20PCB/Original%20Fuse%20Box.jpg" target="_blank" rel="noopener">View Original Fuse Box</a>
+                <a class="text-link" href="assets/40A%20Fuse%20Box%20PCB/Old%20Vs%20New%20Fuse%20Box.jpg" target="_blank" rel="noopener">Compare Old and New</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Ultra-Compact%203-Axis%20Magnetometer/For%20Front.jpg" alt="Ultra-Compact 3-Axis Magnetometer PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Miniature magnetic sensing</p>
+              <h3>Ultra-Compact 3-Axis Magnetometer</h3>
+              <p>
+                An ultra-compact 1.9 &times; 9 mm magnetometer PCB integrating a
+                3-axis magnetic sensor, on-board voltage regulation, and an I2C
+                interface. The layout is optimized for severe space constraints,
+                signal integrity, and reliable manufacturing in miniature embedded
+                systems.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Size</dt>
+                  <dd>1.9 &times; 9 mm</dd>
+                </div>
+                <div>
+                  <dt>Sensor</dt>
+                  <dd>3-axis magnetometer</dd>
+                </div>
+                <div>
+                  <dt>Interface</dt>
+                  <dd>I2C</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Ultra-Compact%203-Axis%20Magnetometer/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Ultra-Compact%203-Axis%20Magnetometer/PCB%20Top.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/Ultra-Compact%203-Axis%20Magnetometer/PCB%20Bottom.jpg" target="_blank" rel="noopener">View PCB Bottom</a>
+                <a class="text-link" href="assets/Ultra-Compact%203-Axis%20Magnetometer/Assembly%20Drawing.jpg" target="_blank" rel="noopener">View Assembly Drawing</a>
+                <a class="text-link" href="assets/Ultra-Compact%203-Axis%20Magnetometer/Assembled%20PCB.jpg" target="_blank" rel="noopener">View Assembled PCB</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/For%20front.jpg" alt="CPY-7 Audio AMP reverse-engineered PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Audio hardware reconstruction</p>
+              <h3>CPY-7 Audio AMP PCB Reverse Engineering</h3>
+              <p>
+                Reverse engineered an audio amplifier PCB to produce a fully
+                functional replacement board. The work covered component
+                identification, schematic reconstruction, BOM extraction, and
+                mechanical and electrical layout reproduction, followed by validation
+                testing to confirm form-fit-function compatibility with the original
+                hardware.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Scope</dt>
+                  <dd>Complete PCB reconstruction</dd>
+                </div>
+                <div>
+                  <dt>Deliverables</dt>
+                  <dd>Schematic, BOM, layout</dd>
+                </div>
+                <div>
+                  <dt>Validation</dt>
+                  <dd>Form, fit, and function</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/Original%20PCB.jpg" target="_blank" rel="noopener">View Original PCB</a>
+                <a class="text-link" href="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/PCB%20Top.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/PCB%20Bottom.jpg" target="_blank" rel="noopener">View PCB Bottom</a>
+                <a class="text-link" href="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/Assembly%20Drawing.jpg" target="_blank" rel="noopener">View Assembly Drawing</a>
+                <a class="text-link" href="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/Fabricated%20PCB.jpg" target="_blank" rel="noopener">View Fabricated PCB</a>
+                <a class="text-link" href="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/Assembled%20PCB.jpg" target="_blank" rel="noopener">View Assembled PCB</a>
+                <a class="text-link" href="assets/CPY-7%20Audio%20AMP%20PCB%20Reverse%20Engineering/Enclosure%20Design.jpg" target="_blank" rel="noopener">View Enclosure Design</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Hall%20Effect%20Sensor%20Speaker/For%20Front.jpg" alt="Hall Effect Sensor Speaker PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Contactless audio indication</p>
+              <h3>Hall Effect Sensor Speaker</h3>
+              <p>
+                A compact speaker PCB that detects magnetic-field changes with a
+                Hall-effect sensor and triggers immediate audio feedback or alerts.
+                The board integrates power regulation, sensing, and audio-drive
+                circuitry in a clean, manufacturable layout for contactless state
+                detection with clear sound indication.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Sensor</dt>
+                  <dd>Hall effect</dd>
+                </div>
+                <div>
+                  <dt>Output</dt>
+                  <dd>Audio alert</dd>
+                </div>
+                <div>
+                  <dt>Integration</dt>
+                  <dd>Regulation and audio drive</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Hall%20Effect%20Sensor%20Speaker/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Hall%20Effect%20Sensor%20Speaker/PCB%20Top.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/Hall%20Effect%20Sensor%20Speaker/PCB%20Bottom.jpg" target="_blank" rel="noopener">View PCB Bottom</a>
+                <a class="text-link" href="assets/Hall%20Effect%20Sensor%20Speaker/Assembly%20Drawing.jpg" target="_blank" rel="noopener">View Assembly Drawing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/NVG%20PCB%20Reverse%20Engineering/For%20Front.jpg" alt="NVG reverse-engineered PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Legacy hardware reconstruction</p>
+              <h3>NVG PCB Reverse Engineering</h3>
+              <p>
+                Reverse engineered a fully populated through-hole PCB without access
+                to the original schematics or design files. The work covered component
+                identification, net tracing, schematic reconstruction, and a complete
+                PCB redesign while preserving the original electrical behavior,
+                mechanical fit, and form factor.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Assembly</dt>
+                  <dd>Through-hole</dd>
+                </div>
+                <div>
+                  <dt>Process</dt>
+                  <dd>Trace and reconstruct</dd>
+                </div>
+                <div>
+                  <dt>Constraint</dt>
+                  <dd>Original fit and function</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/NVG%20PCB%20Reverse%20Engineering/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/NVG%20PCB%20Reverse%20Engineering/Original%20PCB.jpg" target="_blank" rel="noopener">View Original PCB</a>
+                <a class="text-link" href="assets/NVG%20PCB%20Reverse%20Engineering/PCB%20Layout.jpg" target="_blank" rel="noopener">View PCB Layout</a>
+                <a class="text-link" href="assets/NVG%20PCB%20Reverse%20Engineering/PCB%20TOp.jpg" target="_blank" rel="noopener">View PCB Top</a>
+                <a class="text-link" href="assets/NVG%20PCB%20Reverse%20Engineering/Reversed%20Engineered%20PCB.jpg" target="_blank" rel="noopener">View Rebuilt PCB</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Embedded%20Motion%20Sensor/For%20Front.jpg" alt="Embedded Motion Sensor PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Industrial motion sensing</p>
+              <h3>Embedded Motion Sensor</h3>
+              <p>
+                An embedded motor-sensor node built around the LSM6DSV16X IMU and
+                STM32G474 microcontroller for real-time motion data streaming. The
+                board integrates a TLE9251 CAN interface with 120&ohm; termination,
+                5V-to-3.3V regulation, SWD programming pads, and robust connectivity
+                for reliable field installation.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Controller</dt>
+                  <dd>STM32G474</dd>
+                </div>
+                <div>
+                  <dt>Sensor</dt>
+                  <dd>LSM6DSV16X IMU</dd>
+                </div>
+                <div>
+                  <dt>Interface</dt>
+                  <dd>TLE9251 CAN</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Embedded%20Motion%20Sensor/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Embedded%20Motion%20Sensor/PCB%20Top.jpg" target="_blank" rel="noopener">View PCB Top</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Dual-Output%20Switching%20Power%20Supply/For%20front.jpg" alt="Dual-Output Switching Power Supply PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Power electronics</p>
+              <h3>Dual-Output Switching Power Supply</h3>
+              <p>
+                A 6-layer dual-output switching power supply built around the
+                ISL6236A dual buck controller. The layout uses optimized power and
+                ground planes, tightly controlled high-current switching loops, and
+                compact component placement to support efficient power delivery,
+                signal integrity, and manufacturability.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Controller</dt>
+                  <dd>ISL6236A</dd>
+                </div>
+                <div>
+                  <dt>Topology</dt>
+                  <dd>Dual buck converter</dd>
+                </div>
+                <div>
+                  <dt>Stackup</dt>
+                  <dd>6-layer PCB</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Dual-Output%20Switching%20Power%20Supply/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Dual-Output%20Switching%20Power%20Supply/PCB%20Top.jpg" target="_blank" rel="noopener">View Top</a>
+                <a class="text-link" href="assets/Dual-Output%20Switching%20Power%20Supply/PCB%20Bottom.jpg" target="_blank" rel="noopener">View Bottom</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Media%20Remote%20Controller%20PCB/For%20Front.jpg" alt="ESP32-C3 Media Remote Controller PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Wireless media control</p>
+              <h3>Media Remote Controller PCB</h3>
+              <p>
+                A compact wireless media-control PCB built around the ESP32-C3. It
+                combines dual tactile inputs, USB-C and Qi wireless charging,
+                buck-boost 3.3V regulation, battery fuel-gauge monitoring, protection
+                and ESD circuitry, and dedicated test points for reliable bring-up.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Controller</dt>
+                  <dd>ESP32-C3</dd>
+                </div>
+                <div>
+                  <dt>Charging</dt>
+                  <dd>BQ24074 and BQ51013</dd>
+                </div>
+                <div>
+                  <dt>Power</dt>
+                  <dd>TPS63031 and MAX17048</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Media%20Remote%20Controller%20PCB/Schematics.jpg" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Media%20Remote%20Controller%20PCB/PCB%20Top.jpg" target="_blank" rel="noopener">View Top</a>
+                <a class="text-link" href="assets/Media%20Remote%20Controller%20PCB/PCB%20Bottom.jpg" target="_blank" rel="noopener">View Bottom</a>
+                <a class="text-link" href="assets/Media%20Remote%20Controller%20PCB/Assembly%20Drawing.jpg" target="_blank" rel="noopener">View Assembly Drawing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Motor%20Driver%20Module/For%20Front.png" alt="ESP32-based Motor Driver Module PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Automotive motor control</p>
+              <h3>Motor Driver Module</h3>
+              <p>
+                A custom ESP32-based motor driver PCB developed to modernize control
+                systems in a vintage car. The board integrates three high-current
+                motor driver stages, a buck-converter power section, and robust
+                terminal interfaces for reliable, wireless, and programmable control
+                while preserving the vehicle's classic hardware.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Controller</dt>
+                  <dd>ESP32</dd>
+                </div>
+                <div>
+                  <dt>Outputs</dt>
+                  <dd>3 motor channels</dd>
+                </div>
+                <div>
+                  <dt>Power</dt>
+                  <dd>On-board buck converter</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Motor%20Driver%20Module/Schematics%20and%20Layout.png" target="_blank" rel="noopener">View Schematics and Layout</a>
+                <a class="text-link" href="assets/Motor%20Driver%20Module/3d%20Render.png" target="_blank" rel="noopener">View 3D Render</a>
+                <a class="text-link" href="assets/Motor%20Driver%20Module/Testing.jpeg" target="_blank" rel="noopener">View Testing</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/FPC%20Extension/For%20Front.png" alt="60 mm camera module FPC extension render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">High-speed flex interconnect</p>
+              <h3>FPC Extension</h3>
+              <p>
+                A custom 60 mm FPC extension designed to relocate an embedded camera
+                sensor cleanly within tight enclosures. The flex PCB routes MIPI CSI-2
+                high-speed lanes, clocks, power rails, and I2C control signals between
+                two 30-pin, 0.4 mm-pitch connectors, using length-matched differential
+                pairs and controlled impedance to maintain signal integrity.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Length</dt>
+                  <dd>60 mm</dd>
+                </div>
+                <div>
+                  <dt>Connectors</dt>
+                  <dd>30-pin, 0.4 mm pitch</dd>
+                </div>
+                <div>
+                  <dt>Interface</dt>
+                  <dd>MIPI CSI-2 and I2C</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/FPC%20Extension/SCH%20REV_C.pdf" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/FPC%20Extension/PCB%20LAYOUT%20.png" target="_blank" rel="noopener">View PCB Layout</a>
+                <a class="text-link" href="assets/FPC%20Extension/Assembly%20Drawing.jpg" target="_blank" rel="noopener">View Assembly Drawing</a>
+                <a class="text-link" href="assets/FPC%20Extension/Original%20Connector.jpeg" target="_blank" rel="noopener">View Original Connector</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Custom%20Rotary%20Encoder%20Module/For%20Front.png" alt="Custom Rotary Encoder Module PCB render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Human-machine interface</p>
+              <h3>Custom Rotary Encoder Module</h3>
+              <p>
+                A compact rotary encoder breakout PCB with a clean 5-pin interface
+                (GND, V+, SW, DT, and CLK) for quick integration into embedded
+                projects. The board combines a robust mechanical footprint with tidy
+                encoder-channel routing and provisions for pull-up and debounce
+                components to improve reliability during fast turns and button presses.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Interface</dt>
+                  <dd>5-pin header</dd>
+                </div>
+                <div>
+                  <dt>Signals</dt>
+                  <dd>SW, DT, CLK</dd>
+                </div>
+                <div>
+                  <dt>Conditioning</dt>
+                  <dd>Pull-up and debounce</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Custom%20Rotary%20Encoder%20Module/PCB%20Layout.png" target="_blank" rel="noopener">View PCB Layout</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Dual-Relay%20Control%20PCB%20(Reverse%20Engineered)/For%20Front.png" alt="Reverse-engineered dual-relay control PCB">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Relay PCB reverse engineering</p>
+              <h3>Dual-Relay Control PCB (Reverse Engineered)</h3>
+              <p>
+                Reverse engineered a 12V dual-relay control PCB by reconstructing
+                its schematic, verifying the BOM and component footprints, and
+                recreating the PCB layout to preserve the original functionality
+                for manufacturing and technical documentation.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Supply</dt>
+                  <dd>12V</dd>
+                </div>
+                <div>
+                  <dt>Outputs</dt>
+                  <dd>2 relay channels</dd>
+                </div>
+                <div>
+                  <dt>Scope</dt>
+                  <dd>Schematic and layout</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Dual-Relay%20Control%20PCB%20(Reverse%20Engineered)/Schematics.png" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Dual-Relay%20Control%20PCB%20(Reverse%20Engineered)/Orignal%20PCB.png" target="_blank" rel="noopener">View Original PCB</a>
+                <a class="text-link" href="assets/Dual-Relay%20Control%20PCB%20(Reverse%20Engineered)/PCB%20LAYOUT%20TOP.png" target="_blank" rel="noopener">View Top Layout</a>
+                <a class="text-link" href="assets/Dual-Relay%20Control%20PCB%20(Reverse%20Engineered)/PCB%20LAYOUT%20BOT.png" target="_blank" rel="noopener">View Bottom Layout</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/PCB%20Reverse%20Engineering/For%20front.jpg" alt="Reverse-engineered through-hole PCB with edge connector">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Through-hole PCB reconstruction</p>
+              <h3>PCB Reverse Engineering</h3>
+              <p>
+                Reverse engineered a through-hole PCB with an edge connector by
+                tracing nets, identifying component values and footprints, and
+                rebuilding the design as a clean, documented assembly. Deliverables
+                included an updated schematic, BOM, PCB layout, and a complete 3D
+                model used to validate mechanical fit and assembly before fabrication.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Method</dt>
+                  <dd>Net tracing</dd>
+                </div>
+                <div>
+                  <dt>Assembly</dt>
+                  <dd>Through-hole</dd>
+                </div>
+                <div>
+                  <dt>Deliverables</dt>
+                  <dd>Schematic, BOM, layout</dd>
                 </div>
               </dl>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Panel%20PCB%20Reverse%20Engineered/for%20front.png" alt="Reverse-engineered panel PCB front view">
+            </div>
             <div class="project-content">
-              <p class="project-kicker">Prototype</p>
-              <h3>Power or Sensor Board</h3>
+              <p class="project-kicker">PCB reverse engineering</p>
+              <h3>Panel PCB Reverse Engineered</h3>
               <p>
-                Add the design goal, constraints, layout notes, firmware scope, and validation results.
+                Reverse engineered a long control and display PCB by mapping its
+                connectors and I/O, rebuilding the schematic and netlist, and
+                recreating the layout for manufacturing. The finished design includes
+                clear silkscreen references, verified component footprints, and
+                fabrication-ready top and bottom outputs while preserving the original
+                form factor and mounting constraints.
               </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Scope</dt>
+                  <dd>Schematic and layout</dd>
+                </div>
+                <div>
+                  <dt>Validation</dt>
+                  <dd>Footprints and I/O</dd>
+                </div>
+                <div>
+                  <dt>Output</dt>
+                  <dd>Fabrication ready</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/Panel%20PCB%20Reverse%20Engineered/Schematics.png" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/Panel%20PCB%20Reverse%20Engineered/Original%20PCB.jpeg" target="_blank" rel="noopener">View Original PCB</a>
+                <a class="text-link" href="assets/Panel%20PCB%20Reverse%20Engineered/PCB%20Top.png" target="_blank" rel="noopener">View Top</a>
+                <a class="text-link" href="assets/Panel%20PCB%20Reverse%20Engineered/PCB%20Bottom%20View.png" target="_blank" rel="noopener">View Bottom</a>
+              </div>
             </div>
           </article>
 
-          <article class="project-card">
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/WeMos%20D1%20Max%20%E2%80%93%20Quad%20ESP8266%20Carrier%20Board/For%20Front.png" alt="WeMos D1 Max Quad ESP8266 Carrier Board render">
+            </div>
             <div class="project-content">
-              <p class="project-kicker">In progress</p>
-              <h3>Embedded Controller</h3>
+              <p class="project-kicker">Multi-node IoT platform</p>
+              <h3>WeMos D1 Max - Quad ESP8266 Carrier Board</h3>
               <p>
-                Use this slot for an MCU-based board, communication interface, motor driver,
-                data logger, or custom module.
+                A custom carrier PCB designed to host four WeMos D1 Mini modules on
+                a single board. It provides shared power, a reset switch, an on-board
+                status LED, and neatly routed headers that break out each module's
+                I/O pins. It is ideal for rapid IoT prototyping, parallel firmware
+                testing, and compact multi-node Wi-Fi projects.
               </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Modules</dt>
+                  <dd>4x WeMos D1 Mini</dd>
+                </div>
+                <div>
+                  <dt>Platform</dt>
+                  <dd>ESP8266 Wi-Fi</dd>
+                </div>
+                <div>
+                  <dt>Features</dt>
+                  <dd>Shared power and I/O</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/WeMos%20D1%20Max%20%E2%80%93%20Quad%20ESP8266%20Carrier%20Board/Schematics%20.png" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/WeMos%20D1%20Max%20%E2%80%93%20Quad%20ESP8266%20Carrier%20Board/Top.png" target="_blank" rel="noopener">View Top</a>
+                <a class="text-link" href="assets/WeMos%20D1%20Max%20%E2%80%93%20Quad%20ESP8266%20Carrier%20Board/Bottom.png" target="_blank" rel="noopener">View Bottom</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/LED%20Indicator%20Module/For%20front%20.png" alt="LED Indicator Module PCB render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Status indication</p>
+              <h3>LED Indicator Module</h3>
+              <p>
+                A compact 3-channel indicator PCB with red, yellow, and green LEDs
+                and on-board current-limiting resistors. Its simple 4-pin interface
+                (GND plus three signal lines) and four mounting holes make it easy to
+                integrate into microcontroller projects for status indication,
+                debugging, and rapid prototyping.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Channels</dt>
+                  <dd>3 LED outputs</dd>
+                </div>
+                <div>
+                  <dt>Interface</dt>
+                  <dd>4-pin header</dd>
+                </div>
+                <div>
+                  <dt>LEDs</dt>
+                  <dd>Red, yellow, green</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/LED%20Indicator%20Module/Schematics.JPG" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/LED%20Indicator%20Module/More%20Images/TOP.png" target="_blank" rel="noopener">View Top</a>
+                <a class="text-link" href="assets/LED%20Indicator%20Module/More%20Images/Bottom.png" target="_blank" rel="noopener">View Bottom</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/MRM.png" alt="Master Relay Module PCB render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Relay control system</p>
+              <h3>Master Relay Module</h3>
+              <p>
+                A master relay control PCB designed for organized multi-load switching
+                and embedded control integration. The project includes the PCB design,
+                schematic documentation, board layout, and enclosure design reference.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Type</dt>
+                  <dd>Relay control PCB</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Multi-load control</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Prototype</dd>
+                </div>
+              </dl>
+              <div class="project-actions">
+                <a class="text-link" href="assets/MRM%20Schematics.pdf" target="_blank" rel="noopener">Open Schematics</a>
+                <a class="text-link" href="assets/MRM%20PCB%20Layout.JPG" target="_blank" rel="noopener">Open Layout</a>
+                <a class="text-link" href="assets/MRM%20Enclosure%20.JPG" target="_blank" rel="noopener">Open Enclosure Design</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Shield%20Board%20for%20Arduino.png" alt="Shield Board for Arduino PCB render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Arduino expansion board</p>
+              <h3>Shield Board for Arduino</h3>
+              <p>
+                A custom Arduino shield board designed to extend standard Arduino hardware
+                with a clean add-on PCB format. The board is built around simple integration,
+                accessible headers, and fabrication-ready documentation.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Type</dt>
+                  <dd>Arduino shield PCB</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Expansion interface</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Fabrication ready</dd>
+                </div>
+              </dl>
+              <a class="text-link" href="assets/Fab%20Files.pdf" target="_blank" rel="noopener">Open Fabrication Files</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Dual%20Relay%20Module%20.png" alt="Dual Relay Module PCB render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Relay control board</p>
+              <h3>Dual Relay Module</h3>
+              <p>
+                A two-channel relay PCB designed to switch independent external loads
+                from low-voltage control signals. The module keeps the control and load
+                sides organized for easier wiring, testing, and embedded system integration.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Type</dt>
+                  <dd>Dual relay PCB</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Two-channel switching</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Prototype</dd>
+                </div>
+              </dl>
+              <a class="text-link" href="assets/Dual%20Relay%20Module%20Schematics.JPG" target="_blank" rel="noopener">Open Schematics</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/Single%20Relay%20Module%20.png" alt="Single Relay Module PCB render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Relay control board</p>
+              <h3>Single Relay Module</h3>
+              <p>
+                A compact single-channel relay PCB for switching external loads from a
+                low-voltage control signal. The design focuses on clear control and load
+                separation, practical terminal access, and a simple layout for prototype use.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Type</dt>
+                  <dd>Single relay PCB</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Load switching</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Prototype</dd>
+                </div>
+              </dl>
+              <a class="text-link" href="assets/SRM%20Layout.JPG" target="_blank" rel="noopener">Open Layout</a>
+            </div>
+          </article>
+
+          <article class="project-card featured">
+            <div class="project-visual">
+              <img src="assets/PCB%203D.png" alt="Smart MCU PCB 3D render">
+            </div>
+            <div class="project-content">
+              <p class="project-kicker">Microcontroller board</p>
+              <h3>Smart MCU</h3>
+              <p>
+                A compact microcontroller-based PCB designed for embedded control,
+                prototyping, and hardware integration. The board focuses on clean
+                routing, practical I/O access, and a layout suitable for assembly and testing.
+              </p>
+              <dl class="spec-list">
+                <div>
+                  <dt>Type</dt>
+                  <dd>MCU development PCB</dd>
+                </div>
+                <div>
+                  <dt>Focus</dt>
+                  <dd>Embedded control</dd>
+                </div>
+                <div>
+                  <dt>Status</dt>
+                  <dd>Prototype</dd>
+                </div>
+              </dl>
+              <a class="text-link" href="assets/Schematics.JPG" target="_blank" rel="noopener">Open Schematics</a>
             </div>
           </article>
         </div>
@@ -141,19 +928,19 @@
         <div class="skill-columns">
           <article>
             <h3>EDA</h3>
-            <p>KiCad, Altium Designer, Eagle, EasyEDA, schematic capture, PCB layout, library management.</p>
+            <p>PCB layout, schematic design, component libraries, manufacturability checks, and documentation.</p>
           </article>
           <article>
             <h3>Embedded</h3>
-            <p>C, C++, Arduino, STM32, ESP32, bootloaders, drivers, sensor integration.</p>
+            <p>Embedded systems, sensor interfaces, MCU bring-up, test planning, and board-level validation.</p>
           </article>
           <article>
             <h3>Interfaces</h3>
-            <p>I2C, SPI, UART, USB, CAN, RF modules, power conversion, mixed-signal routing.</p>
+            <p>I2C, SPI, UART, USB, sensor buses, power distribution, and mixed-signal routing.</p>
           </article>
           <article>
             <h3>Manufacturing</h3>
-            <p>Gerbers, BOM, pick-and-place, DFM checks, assembly notes, prototype bring-up.</p>
+            <p>Gerbers, BOM, fabrication handoff, DFM checks, assembly notes, prototype testing.</p>
           </article>
         </div>
       </section>
@@ -161,24 +948,21 @@
       <section id="contact" class="section contact-section">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Open to hardware design work and collaboration.</h2>
+          <h2>Connect for hardware design work and collaboration.</h2>
           <p>
-            Add your email, LinkedIn, resume, and any project repositories here. The GitHub
-            Pages repository is ready for those details as soon as you have them.
+            Reach Muhammad Taimoor Muzaffar by email, LinkedIn, or GitHub.
           </p>
         </div>
         <div class="contact-links">
           <a href="https://github.com/M-TAIMOOR-M/Muzaffar.github.io">GitHub</a>
-          <a href="mailto:your.email@example.com">Email</a>
-          <a href="#" aria-disabled="true">LinkedIn</a>
-          <a href="#" aria-disabled="true">Resume</a>
+          <a href="https://www.linkedin.com/in/engr-muhammad-taimoor-muzaffar-86549a218/">LinkedIn</a>
+          <a href="mailto:taimoormuzaffar4@gmail.com">taimoormuzaffar4@gmail.com</a>
         </div>
       </section>
     </main>
 
     <footer>
       <span>&copy; <span id="year">2026</span> Muhammad Taimoor Muzaffar</span>
-      <span>Designed for PCB project case studies.</span>
     </footer>
 
     <script src="script.js"></script>
